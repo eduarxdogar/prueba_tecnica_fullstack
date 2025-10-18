@@ -1,3 +1,42 @@
+### Diagrama de Flujo de la Aplicación
+
+```mermaid
+graph LR
+    subgraph Navegador
+        A(Usuario)
+    end
+
+    subgraph Frontend [Angular en localhost:4200]
+        B(Componente Vista)
+        C(Servicio API)
+    end
+
+    subgraph Backend [Node.js en localhost:3000]
+        D(API REST - index.js)
+        E(Lógica SQL - queries.js)
+    end
+
+    subgraph Base de Datos
+        F(PostgreSQL)
+    end
+
+    A --> B;
+    B --> C;
+    C -- HTTP Request (GET/POST/PUT/DELETE) --> D;
+    D --> E;
+    E -- SQL Query --> F;
+    F -- SQL Response --> E;
+    E --> D;
+    D -- JSON Response --> C;
+    C --> B;
+    B --> A;
+````
+
+
+
+
+
+
 # Prueba Técnica Full Stack (Node.js + Angular)
 
 Solución a la prueba técnica para Desarrollador Full Stack. Este repositorio contiene un proyecto **monorepo** con dos carpetas principales:
