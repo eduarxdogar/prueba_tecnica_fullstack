@@ -2,8 +2,8 @@
 
 Solución a la prueba técnica para Desarrollador Full Stack. Este repositorio contiene un proyecto **monorepo** con dos carpetas principales:
 
-* `/backend`: Una API REST (microservicio) en **Node.js + Express** conectada a PostgreSQL.
-* `/frontend`: Una aplicación de cliente en **Angular + Angular Material** que consume la API.
+* `/back`: Una API REST (microservicio) en **Node.js + Express** conectada a PostgreSQL.
+* `/front`: Una aplicación de cliente en **Angular + Angular Material** que consume la API.
 
 ---
 
@@ -53,7 +53,7 @@ Antes de ejecutar el proyecto, se requiere una configuración única:
     );
     ```
 
-4.  **¡IMPORTANTE!** Editar el archivo `backend/db.js` y actualizar el campo `password` (y `user`/`database` si es necesario) con sus credenciales locales de PostgreSQL.
+4.  **¡IMPORTANTE!** Editar el archivo `back/db.js` y actualizar el campo `password` (y `user`/`database` si es necesario) con sus credenciales locales de PostgreSQL.
 
 ---
 
@@ -73,11 +73,13 @@ npm install
 # 3. Iniciar el servidor en modo desarrollo (con reinicio automático)
 npm run dev
 
+# 4. La aplicación se abrirá automáticamente en su navegador en http://localhost:3000.
+
 
 
 # 1. (En la segunda terminal) Navegar a la carpeta del frontend
 # (La estructura de carpetas es /front/front/)
-cd frontend/front
+cd front/front
 
 # 2. Instalar las dependencias
 npm install
