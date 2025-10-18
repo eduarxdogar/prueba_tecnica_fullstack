@@ -1,0 +1,20 @@
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+mat-icon {
+  margin-right: 8px; 
+}
+
+
+@media (max-width: 600px) {
+
+  .nav-text {
+    display: none;
+  }
+
+  mat-icon {
+    margin-right: 0;
+  }
+}

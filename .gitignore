@@ -1,0 +1,87 @@
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.npmrc.lock
+# lockfiles normalmente se rastrean (package-lock.json/yarn.lock), no se ignoran por defecto
+
+# Environment
+.env
+.env.*.local
+.env.local
+.env.test
+.env.production
+.env.*.secret
+
+# Build / output
+dist/
+build/
+out/
+lib/
+public/build/
+.vite/
+.cache/
+.next/
+.nuxt/
+.serverless/
+.svelte-kit/
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing / coverage
+coverage/
+.nyc_output/
+jest-cache/
+jest-results.json
+
+# Logs & runtime files
+logs/
+*.log
+debug.log*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.project
+.classpath
+.settings/
+.history/
+
+# Containers / deployment
+docker-compose.override.yml
+.docker/
+docker-compose.*.yml
+*.tgz
+
+# Package managers / lock caches
+.packages
+bower_components/
+
+# Misc
+*.envrc
+*.local
+coverage-final.json
+*.iml
+coverage-summary.json
+
+# Optional: files generados por herramientas comunes
+.cache/
+.parcel-cache/
+.eslintcache
+stylelint-cache/
